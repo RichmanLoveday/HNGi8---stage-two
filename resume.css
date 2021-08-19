@@ -141,6 +141,7 @@ header .flex {
 
 .menu ul li {
     margin: 10px;
+    list-style: none;
 }
 
 .menu ul li:nth-child(1) {
