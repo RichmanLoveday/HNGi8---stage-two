@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resume.css">
+        <link rel="stylesheet" href="animation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
+        "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
+        "anonymous"/>
+        <script src="resume.js"></script>
+        <title>resume</title>
+    </head>
+
+    <body>
+        <header> 
+            <div class="container">
+                <div class="flex">
+                    <a href="" class="col1">
+                     <div>
+                         <div class="logo">
+                             <h4>OLR</h4>
+                         </div>
+                         <div class="rotate_logo"></div>
+                     </div>
+                    </a> 
+         
+                     <div class="col2 nav-bar">
+                         <ul>
+                             <li> <a href="index.html">Home</a></li>
+                             <li> <a href="#about">About</a></li>
+                             <li><a href="#services">Services</a></li>
+                             <li><a href="#resume">Resume</a></li>
+                         </ul>
+                     </div>
+                     <div class="menu-open">
+                         <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                     </div>
+                 </div>
+            </div>
+        </header>
+
+           <!---Side menu for a smaller screen-->
+           <div id="side-menu" class="menu">
+            <ul>
+                <li><a class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+
+        <main class="main-side">
+            <div class="banner ">
+                <div class="layer">
+                    <div class="small-container">
+                        <h1 class="animate-fade-slide-right show-on-scroll"><span>Hi This is</span>  <br>Loveday Richman <br> <span>Front-End Web Developer</span></h1>
+                        <a href="https://medium.com/me/stories/public"><button class="layer-btn animate-opacity show-on-scroll">VISIT MY BLOG</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <section class="container">
+                <section id="about" class="about_n_image">
+                    <div class="flex">
+                        <div class="my-image col1">
+                            <img src="images/my_pic.jpg" alt="my_pic">
+                        </div>
+        
+                        <div class="about-me col2">
+                            <div>
+                                <h1>Hi.</h1>
+                            <p>
+                                I am a front-end developer, living in Uyo, Nigeria. I develop interactive,
+                                reponsive and fast websites. Feel free to navigate.
+                            </p>
+                            </div>
+                            
+                            <div class="details">
+                                <h5><span>Name</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>Okere Loveday Richman</span></h5>
+                                <h5><span>Age</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>59 Years</span></h5>
+                                <h5><span>Experience</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>1 year experience</span></h5>
+                                <h5><span>Country</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>Nigeria</span></h5>
+                                <h5><span>Location</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>Uyo, Aks</span></h5>
+                                <h5><span>E-mail</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>lovedayrichman@yahoo.com</span></h5>
+                                <h5><span>Phone</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>+2347055553109</span></h5>
+                                <h5><span>Freelence</span><span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span><span>Available</span></h5>
+                            </div>
+    
+                            <div>
+                              <a href="https://mail.yahoo.com/d/compose/9956585812"><button class="details-btn animate-opacity show-on-scroll">CONTACT ME</button></a>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+           <section id="services" class="what_i_do">
+                <div class="container">
+                    <h1>What I do</h1>
+
+                <div class="flex">
+                    <div class="col animate-opacity show-on-scroll">
+                        <div class="inner_col_flex">
+                            <i class="fa fa-th-large" aria-hidden="true"></i>
+                            <h3>FRONT-END DEVELOPMENT</h3>
+                            <p>
+                                I provide front-end responsive webstite development using HTML, CSS and Javascript
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll">
+                        <div class="inner_col_flex">
+                            <img src="images/teach.png" alt="teach">
+                            <h3>TUTOR</h3>
+                            <p>
+                                I render the best services that can help train a novice from zero to hero, feel free
+                                to connect with me.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll">
+                        <div class="inner_col_flex">
+                            <img src="images/chat.png" alt="chat">
+                            <h3>CUNSULTANCY</h3>
+                            <p>
+                                I am simply i consultant in giving ideas, 
+                                solutions and refrences in front-end develpment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="resume" class="resume">
+                <div class="container">
+                    <div class="flex">
+                        <div class="col col1 animate-fade-slide-left show-on-scroll">
+                            <h1>Education</h1>
+                            <div>
+                                <h5>Bsc In Computer Engineering - University Of Uyo</h5>
+                                <h6>2017 - Present</h6>
+                                <p>
+                                    Presently attending a five years degree program in computer engineering in the University of Uyo, 
+                                    Uyo, Akwa Ibom state Nigeria.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>Certificate Program In Computer Engineering - University Of Port-Harcourt</h5>
+                                <h6>2016 - 2017</h6>
+                                <p>
+                                    Undergone a 6 months certificate program in computer engineering in the University Of 
+                                    Port-Harcourt, Rivers Nigeria.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>High School - Charry Comprehensive Secondary School Port Harcourt</h5>
+                                <h6>2013 - 2016</h6>
+                                <p>
+                                    Graduated from charry comprehensive secondary school in Port-Harcourt, Rivers 
+                                    State Nigeria.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col col2 animate-fade-slide-right show-on-scroll">
+                            <h1>Experience</h1>
+                            <div>
+                                <h5>Zuri Internship</h5>
+                                <h6>2020 - 2021</h6>
+                                <p>
+                                    Team lead, front-end development group for pjt-45 group.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>Zuri Internship</h5>
+                                <!-- <h6>2020 - 2021</h6> -->
+                                <p>
+                                    Conduted testing and review of website design for responsiveness, clarity 
+                                    and effectiveness.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>Zuri Internship</h5>
+                                <p>
+                                    Provided front-end website development using HTML, CSS, JAVASCRIPT and other
+                                    editing software.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>Powered By HNG</h4>
+            <a href="https://hng.tech/" class="animate-opacity show-on-scroll"><img src="images/hng.png" alt="hng_photo"></a>
+        </footer>
+    </body>
+</html>
