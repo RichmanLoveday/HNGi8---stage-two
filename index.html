@@ -9,54 +9,65 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity=
         "sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=
         "anonymous"/>
-        <script src="resume.js"></script>
         <title>resume</title>
     </head>
 
-    <body>
-        <header> 
+    <body> 
+        <header id="top"> 
             <div class="container">
                 <div class="flex">
                     <a href="" class="col1">
-                     <div>
-                         <div class="logo">
+                     <div class="animate-opacity show-on-scroll">
+                         <div class="logo animate-opacity show-on-scroll">
                              <h4>OLR</h4>
                          </div>
                          <div class="rotate_logo"></div>
                      </div>
                     </a> 
          
-                     <div class="col2 nav-bar">
+                     <div class="col2 nav-bar animate-opacity show-on-scroll">
                          <ul>
                              <li> <a href="index.html">Home</a></li>
                              <li> <a href="#about">About</a></li>
                              <li><a href="#services">Services</a></li>
                              <li><a href="#resume">Resume</a></li>
+                             <li><a href="#project">Project</a></li>
                          </ul>
                      </div>
-                     <div class="menu-open">
-                         <i class="fa fa-bars menu-open"  onclick="OpenSideMenu()"></i>
+                     <div class="menu-open" >
+                         <i class="fa fa-bars open-menu menu-open animate-opacity show-on-scroll"  onclick="OpenSideMenu()"></i>
+                         <a class="menu-close animate-pulse show-on-scroll" onclick="CloseSideMenu()">&times;</a>
                      </div>
                  </div>
             </div>
         </header>
 
            <!---Side menu for a smaller screen-->
-           <div id="side-menu" class="menu">
+           <div id="side-menu" class="menu animate-opacity show-on-scroll">
             <ul>
-                <li><a class="menu-close" onclick="CloseSideMenu()">&times;</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li> <a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#project">Project</a></li>
             </ul>
         </div>
 
         <main class="main-side">
             <div class="banner ">
                 <div class="layer">
-                    <div class="small-container">
-                        <h1 class="animate-fade-slide-right show-on-scroll"><span>Hi This is</span>  <br>Loveday Richman <br> <span>Front-End Web Developer</span></h1>
+                    <div class="small-container"> 
+                        <h3 class="animate-fade-slide-right show-on-scroll">Hi This is</h3>
+                        <h1 class="animate-fade-slide-left show-on-scroll">Loveday Richman</h1>
+                        <h3 class="animate-fade-slide-right show-on-scroll">Front-End Web Developer</h3>
+                        
+                        <div class="social_links animate-opacity show-on-scroll">
+                            <a href="#"><span class="facebook"><i class="fab fa-facebook fa-2x"></i></span></a>
+                            <a href="https://github.com/RichmanLoveday?tab=repositories"><span class="github"><img src="images/github.svg" alt=""></i></span></a>
+                            <a href="#"><span class="twitter"><i class="fab fa-twitter fa-2x"></i></span></i></a>
+                            <a href="#"><span class="link_in"><i class="fab fa-linkedin fa-2x"></i></span></i></a>
+                            
+                        </div>
                         <a href="https://medium.com/me/stories/public"><button class="layer-btn animate-opacity show-on-scroll">VISIT MY BLOG</button></a>
                     </div>
                     
@@ -66,13 +77,13 @@
             <section class="container">
                 <section id="about" class="about_n_image">
                     <div class="flex">
-                        <div class="my-image col1">
+                        <div class="my-image col1 animate-fade-slide-lef show-on-scroll" style="opacity: 0;">
                             <img src="images/my_pic.jpg" alt="my_pic">
                         </div>
         
-                        <div class="about-me col2">
+                        <div class="about-me col2 animate-fade-slide-righ show-on-scroll" style="opacity: 0;">
                             <div>
-                                <h1>Hi.</h1>
+                                <h1>Hi,</h1>
                             <p>
                                 I am a front-end developer, living in Uyo, Nigeria. I develop interactive,
                                 reponsive and fast websites. Feel free to navigate.
@@ -140,7 +151,7 @@
             <section id="resume" class="resume">
                 <div class="container">
                     <div class="flex">
-                        <div class="col col1 animate-fade-slide-left show-on-scroll">
+                        <div class="col col1 animate-fade-slide-lef show-on-scroll">
                             <h1>Education</h1>
                             <div>
                                 <h5>Bsc In Computer Engineering - University Of Uyo</h5>
@@ -170,7 +181,7 @@
                             </div>
 
                         </div>
-                        <div class="col col2 animate-fade-slide-right show-on-scroll">
+                        <div class="col col2 animate-fade-slide-righ show-on-scroll">
                             <h1>Experience</h1>
                             <div>
                                 <h5>Zuri Internship</h5>
@@ -200,11 +211,92 @@
                     </div>
                 </div>
             </section>
+
+            
+            <section class="projects" id="project">
+                <div class="container">
+                    <div class="small-container">
+                        <h1>My Remarkable Works</h1>
+                    <div class="list_items">
+                        <button class="col1" onclick="DisplayAll()">ALL</button>
+                        <button class="col2" onclick="DisplaySecFouFif()">WEB APPLICATIONS</button>
+                        <button class="col3" onclick="DisplayFirThirSix()">COMMUNITY</button>
+                    </div>
+                   </div>
+
+                   <div class="sample">
+                    <div class="col animate-opacity show-on-scroll" id="first-image">
+                        <img src="images/computer2.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll" id="second-image">
+                        <img src="images/computer3.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll" id="third-image">
+                        <img src="images/computer4.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll" id="fourth-image">
+                        <img src="images/computer5.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll" id="fifth-image">
+                        <img src="images/computer6.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col animate-opacity show-on-scroll" id="sixth-image">
+                        <img src="images/computer6.jpg" alt="">
+                        <div class="layer">
+                           <div class="inner-layer">
+                               <a><span class="facebook"><i class="fa fa-eye" aria-hidden="true"></i></span></a>
+                               <a href="https://github.com/RichmanLoveday/HNGi8---stage-two"><span class="github"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                          </div>
+                        </div>
+                    </div>
+                   </div>
+                   </div>
+                </div>
+                </div>
+            </section>
         </main>
 
         <footer>
             <h4>Powered By HNG</h4>
             <a href="https://hng.tech/" class="animate-opacity show-on-scroll"><img src="images/hng.png" alt="hng_photo"></a>
         </footer>
+        <a href="#" id="back-to-top"><i class="fa fa-arrow-up animate-pulse" aria-hidden="true" style="color: #fff;"></i></a>
+        <script src="resume.js"></script>
+        </div>
     </body>
 </html>

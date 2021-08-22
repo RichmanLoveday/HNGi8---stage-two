@@ -111,3 +111,39 @@
         transform: none;
     }
 }
+
+
+
+
+.animate-fade-slide-righ.is-visible {
+    animation: fade-slide-righ 0.5s 0.5s ease-out forwards; 
+    opacity: 0;
+ }
+ 
+ @keyframes fade-slide-righ {
+     0% {
+         opacity: 0;
+         transform: translateX(20px);
+     }
+     100% {
+         opacity: 1;
+         transform: none;
+     }
+ }
+ 
+
+.animate-fade-slide-lef.is-visible {
+    animation: fade-slide-lef 0.5s 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fade-slide-lef {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
